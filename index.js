@@ -286,17 +286,14 @@
 let digits = null
 let digit = null
 let sum = null
+
 for (number = 1; number <= 10000; number ++) {
-    // console.log (number)
     digits = number.toString().length
-    // console.log (digits)
+
     for (d = 0; d < digits; d ++) {
         digit = number.toString().charAt(d)
         digit = parseInt (digit)
-        // console.log (digit)
-        // console.log (digits)
         sum += (digit ** digits)
-        // console.log (sum)
     }
     
     if (number === sum) {
