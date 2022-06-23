@@ -254,12 +254,54 @@
 
 // 14 - Amstrong Number
 
+// let digits = null
+// let digit = null
+// let sum = null
+// for (number = 1; number <= 1000; number ++) {
+//     // console.log (number)
+//     digits = number.toString().length
+//     // console.log (digits)
+//     for (d = 0; d < digits; d ++) {
+//         digit = number.toString().charAt(d)
+//         digit = parseInt (digit)
+//         // console.log (digit)
+//         // console.log (digits)
+//         sum += (digit ** digits)
+//         // console.log (sum)
+//     }
+    
+//     if (number === sum) {
+//         console.log (`${number} is an Armstrong number !`)
+//     }
+
+//     sum = null
+// }
+
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// 15 - Armstrong Number générique
+
 let digits = null
 let digit = null
-let temp = null
 let sum = null
-for (number = 0; number < 1000; number ++) {
+for (number = 1; number <= 10000; number ++) {
     // console.log (number)
     digits = number.toString().length
-    console.log (digits)
+    // console.log (digits)
+    for (d = 0; d < digits; d ++) {
+        digit = number.toString().charAt(d)
+        digit = parseInt (digit)
+        // console.log (digit)
+        // console.log (digits)
+        sum += (digit ** digits)
+        // console.log (sum)
+    }
+    
+    if (number === sum) {
+        console.log (`${number} is an Armstrong number !`)
+    }
+
+    sum = null
 }
