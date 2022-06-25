@@ -92,12 +92,12 @@
 
 // let factorial = 1
 
-// for (i = 0; i <= 8; i ++) {
+// for (i = 1; i <= 8; i ++) {
 //     for (j = 1; j < i; j ++) {
 //     }
 
-// factorial *= j
-// console.log (`
+//     factorial *= j
+//     console.log (`
 // La factorielle de ${i} est ${factorial}`)
 // }
 
